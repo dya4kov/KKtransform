@@ -1,0 +1,12 @@
+#======================================================================
+# File with parameters for Kramers-Kronig transform
+#======================================================================
+format: txt         # format of input data files: text or binary
+infile: ./dataIn/Ag-20000-DE01-1.dat   # input file with data for transform
+outfile: ./dataOut/Ag-20000-DE01-2.dat # output file for transformed data
+Wmax: 9             # maximal frequency for output data in range [0, Wmax]
+                    # if Wmax <= 0: Wmax is defined from input
+Npoints: 451	    # number of output points, dW = Wmax/Npoints
+                    # if Npoints <= 0: dW is selected as in input
+check: no           # check (yes/no) consistency of transformed function
+eps: 1e-5           # precision for integral evaluation
